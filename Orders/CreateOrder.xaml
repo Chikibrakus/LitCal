@@ -1,0 +1,41 @@
+﻿<Window x:Class="КалькуляторДляЛитейщиков.CreateOrder"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:КалькуляторДляЛитейщиков"
+        mc:Ignorable="d"
+        Title="Создание заявки" Height="450" Width="800" Background="#FF595959">
+    <Grid>
+        <ComboBox x:Name="productList" DisplayMemberPath="Наименование" 
+                 HorizontalAlignment="Left" Margin="166,41,0,0" VerticalAlignment="Top" 
+                 Width="571" FontFamily="Cascadia Mono SemiBold"/>
+        <Label Content="Выберите продукцию:" HorizontalAlignment="Left" 
+               Margin="166,10,0,0" VerticalAlignment="Top" FontFamily="Cascadia Mono SemiBold"/>
+        <Image HorizontalAlignment="Left" Height="135" Margin="10,10,0,0" 
+              VerticalAlignment="Top" Width="151" Source="/МаякLogo.jpg" Stretch="Fill"/>
+
+        <ScrollViewer HorizontalAlignment="Left" Margin="452,123,0,0" 
+                     VerticalAlignment="Top" Height="240" Width="285">
+            <TextBlock x:Name="materialsList" Text="Выберите продукцию для отображения материалов" 
+                      Background="#FFFFF7AF" FontFamily="Cascadia Mono SemiBold"
+                      TextWrapping="Wrap" Padding="5"/>
+        </ScrollViewer>
+
+        <Image HorizontalAlignment="Left" Height="240" Margin="166,123,0,0" 
+              VerticalAlignment="Top" Width="283" 
+              Source="/Orders/-клиновые-стальные_w616_h380_85e9276a25aa603380dcd3fe2bede41d.jpg" Stretch="Fill"/>
+
+        <Button x:Name="createOrderBtn" Content="Создать заявку" 
+               HorizontalAlignment="Center" Margin="0,369,0,0" 
+               VerticalAlignment="Top" Height="55" Width="780" 
+               FontFamily="Cascadia Mono SemiBold" FontSize="18" 
+               Click="CreateOrderBtn_Click" Style="{StaticResource mainBtn}"/>
+
+        <Label Content="Количество:" HorizontalAlignment="Left" 
+               Margin="166,66,0,0" VerticalAlignment="Top" FontFamily="Cascadia Mono SemiBold"/>
+        <TextBox x:Name="countProduct" HorizontalAlignment="Left" 
+                Margin="251,66,0,0" TextWrapping="Wrap" Text="" 
+                VerticalAlignment="Top" Width="80" FontFamily="Cascadia Mono SemiBold" Height="24"/>
+    </Grid>
+</Window>

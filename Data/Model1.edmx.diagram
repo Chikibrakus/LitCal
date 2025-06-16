@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="d30502c0fd544509ba77873b40a38514" Name="Diagram1" ZoomLevel="108">
+        <EntityTypeShape EntityType="VectorOrdersDBModel.sysdiagrams" Width="1.5" PointX="5.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="VectorOrdersDBModel.Должности" Width="1.5" PointX="0.75" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="VectorOrdersDBModel.Материалы" Width="1.5" PointX="0.75" PointY="8.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="VectorOrdersDBModel.Продукции" Width="1.5" PointX="0.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="VectorOrdersDBModel.СоставПродукции" Width="1.5" PointX="3" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="VectorOrdersDBModel.Сотрудники" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="VectorOrdersDBModel.СтатусЗаявки" Width="1.5" PointX="3" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="VectorOrdersDBModel.СтатусСотрудника" Width="1.5" PointX="0.75" PointY="5.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="VectorOrdersDBModel.ТипПродукции" Width="1.5" PointX="1.5" PointY="15.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="VectorOrdersDBModel.ФотографияПродукции" Width="1.5" PointX="1.5" PointY="18.5" IsExpanded="true" />
+        <AssociationConnector Association="VectorOrdersDBModel.FK_Сотрудники_Должности" ManuallyRouted="false" />
+        <AssociationConnector Association="VectorOrdersDBModel.FK_СоставПродукции_Материалы" ManuallyRouted="false" />
+        <AssociationConnector Association="VectorOrdersDBModel.FK_Продукции_ТипПродукции" ManuallyRouted="false" />
+        <AssociationConnector Association="VectorOrdersDBModel.FK_Продукции_ФотографияПродукции" ManuallyRouted="false" />
+        <AssociationConnector Association="VectorOrdersDBModel.FK_СоставПродукции_Продукции" ManuallyRouted="false" />
+        <AssociationConnector Association="VectorOrdersDBModel.FK_Сотрудники_СтатусСотрудника" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="VectorOrdersDBModel.Заявки" Width="1.5" PointX="5.25" PointY="8.5" />
+        <AssociationConnector Association="VectorOrdersDBModel.FK_Заявки_СоставПродукции" />
+        <AssociationConnector Association="VectorOrdersDBModel.FK_Заявки_Сотрудники1" />
+        <AssociationConnector Association="VectorOrdersDBModel.FK_Заявки_СтатусЗаявки" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
